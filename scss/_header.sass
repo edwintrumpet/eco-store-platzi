@@ -1,0 +1,33 @@
+@use "base"
+
+header
+    display: flex
+    justify-content: space-between
+    padding: 48px 75px
+
+    h1
+        font-size: 3rem
+        font-weight: 400
+    
+    ul
+        display: flex
+        gap: 50px
+
+.icon
+    $size: 50px
+    position: inline-block
+    width: $size
+    height: $size
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    cursor: pointer
+
+.i-profile
+    background-image: url('../assets/icons/user-circle.svg')
+
+.i-heart
+    background-image: url('../assets/icons/heart.svg')
+
+.i-cart
+    background-image: url('../assets/icons/shopping-cart.svg')
