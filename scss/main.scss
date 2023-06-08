@@ -78,6 +78,9 @@ article {
         border-radius: 35px;
         color: white;
         font-size: 1em;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     img {
@@ -188,6 +191,28 @@ section {
 
     .innovation {
         @extend .earth
+    }
+}
+
+.gallery {
+    h2 {
+        font-weight: bold;
+        padding-bottom: 60px;
+    }
+
+    .gallery-images {
+        @include flexcenter(row, space-between, center);
+
+        img {
+            width: 28vw;
+            height: 45vh;
+            object-fit: cover;
+            border-radius: 16px;
+            object-position: 5px 35%;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
     }
 }
 
